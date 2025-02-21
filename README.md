@@ -1,200 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALPHINE QUIZ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eaecef;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            background: white;
-            margin: auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 24px;
-        }
-
-        fieldset {
-            border: none;
-            padding: 10px 0;
-        }
-
-        legend {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="date"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .question {
-            margin-top: 20px;
-        }
-
-        .question p {
-            font-weight: bold;
-        }
-
-        .question label {
-            font-weight: normal;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .submit-btn {
-            display: block;
-            width: 100%;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        .submit-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .result {
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SALPHINE CHEMOS APPS</title>
+    <!-- material cdn -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>SALPHINE  QUIZ</h1>
-
-        <fieldset>
-            <legend>Student Info</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob">
-        </fieldset>
-
-        <hr>
-
-        <div class="question">
-            <p>Question #1</p>
-            <p>The &lt;legend&gt; element represents a caption for the content of its parent &lt;fieldset&gt; element.</p>
-            <label><input type="radio" name="q1" value="true"> True</label>
-            <label><input type="radio" name="q1" value="false"> False</label>
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img
+              src="./images/logo/logo_lifework-enterprise_150px-by-150px_transparent.png"
+            />
+            <h2>SALPHINE<span class="danger">APPS</span></h2>
+            <div class="close" id="close-btn">
+              <span class="material-symbols-sharp"> close </span>
+            </div>
+          </div>
         </div>
-
-        <div class="question">
-            <p>Question #2</p>
-            <p>A &lt;label&gt; element nesting an input element is required to have a <code>for</code> attribute with the same value as the input's <code>id</code>.</p>
-            <label><input type="radio" name="q2" value="true"> True</label>
-            <label><input type="radio" name="q2" value="false"> False</label>
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>DASHBOARD</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-symbols-sharp"> person_outline </span>
+            <h3>CUSTOMERS</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> receipt_long </span>
+            <h3>ORDER</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> insights </span>
+            <h3>MARKETING</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> mail_outline </span>
+            <h3>MESSAGES/h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> inventory </span>
+            <h3>PRODUCTS</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> report_gmailerrorred </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> settings </span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> add </span>
+            <h3>Add Product</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
         </div>
-
-        <div class="question">
-            <p>Question #3</p>
-            <p>Which CSS property is used to change the text color of an element?</p>
-            <label><input type="radio" name="q3" value="color"> color</label>
-            <label><input type="radio" name="q3" value="background-color"> background-color</label>
-            <label><input type="radio" name="q3" value="text-color"> text-color</label>
+      </aside>
+      <!-- end of aside -->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" />
         </div>
-
-        <div class="question">
-            <p>Question #4</p>
-            <p>What does the <code>alt</code> attribute in an &lt;img&gt; tag do?</p>
-            <label><input type="radio" name="q4" value="Adds a caption"> Adds a caption</label>
-            <label><input type="radio" name="q4" value="Provides alternative text for accessibility"> Provides alternative text for accessibility</label>
-            <label><input type="radio" name="q4" value="Changes the image size"> Changes the image size</label>
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,024</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- end of sales -->
+          <div class="expenses">
+            <span class="material-symbols-sharp"> bar_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$14,160</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- end of expenses -->
+          <div class="income">
+            <span class="material-symbols-sharp"> stacked_line_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$10,864</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- end of income -->
         </div>
+        <!-- end of insights -->
 
-        <div class="question">
-            <p>Question #5</p>
-            <p>Which CSS property is used to create space between elements?</p>
-            <label><input type="radio" name="q5" value="margin"> margin</label>
-            <label><input type="radio" name="q5" value="padding"> padding</label>
-            <label><input type="radio" name="q5" value="spacing"> spacing</label>
+        <div class="recent-orders">
+          <h2>Recent Orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
         </div>
+      </main>
+      <!-- end of main -->
 
-        <button class="submit-btn" onclick="checkAnswers()">Submit</button>
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-sharp active"> light_mode </span>
+            <span class="material-symbols-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>SALPHINE</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- end of top -->
+        <div class="recent-updates">
+          <h2>Recent updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>JOE</b> ELECTRONIC KATTLE
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>ANTONY</b> received his order of tv screen 32inches
+                </p>
+                <small class="text-muted">4 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>jeff</b> received his order of smart watch
+                </p>
+                <small class="text-muted">6 Minutes Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of recent updates -->
 
-        <p class="result" id="result"></p>
+        <div class="sales-analytics">
+          <h2>Sales marketing</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-sharp"> shopping_cart </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ONLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+39%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-symbols-sharp"> local_mall </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>OFFLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-symbols-sharp"> person </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>NEW CUSTOMERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+25%</h5>
+              <h3>849</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-symbols-sharp"> add </span>
+              <h3>add the product</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script>
-        function checkAnswers() {
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let dob = document.getElementById("dob").value;
-
-            if (!name || !email || !dob) {
-                alert("Please fill in all student details before submitting.");
-                return;
-            }
-
-            let correctAnswers = {
-                q1: "true",
-                q2: "true",
-                q3: "color",
-                q4: "Provides alternative text for accessibility",
-                q5: "margin"
-            };
-
-            let score = 0;
-            let totalQuestions = Object.keys(correctAnswers).length;
-
-            for (let key in correctAnswers) {
-                let selected = document.querySelector(`input[name="${key}"]:checked`);
-                if (selected && selected.value === correctAnswers[key]) {
-                    score++;
-                }
-            }
-
-            let resultText = `You scored ${score} out of ${totalQuestions}.`;
-            if (score === totalQuestions) {
-                resultText += " 🎉 Excellent!";
-            } else if (score >= 3) {
-                resultText += " 😊 Good job!";
-            } else {
-                resultText += " 😢 Try again!";
-            }
-
-            document.getElementById("result").textContent = resultText;
-        }
-    </script>
-
-</body>
+    <script src="./orders.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
+
