@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salphine Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaecef;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 10px 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .question {
+            margin-top: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        .question label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HTML/CSS Quiz</h1>
+
+        <fieldset>
+            <legend>Student Info</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <hr>
+
+        <div class="question">
+            <p>Question #1</p>
+            <p>The &lt;legend&gt; element represents a caption for the content of its parent &lt;fieldset&gt; element.</p>
+            <label><input type="radio" name="q1" value="true"> True</label>
+            <label><input type="radio" name="q1" value="false"> False</label>
+        </div>
+
+        <div class="question">
+            <p>Question #2</p>
+            <p>A &lt;label&gt; element nesting an input element is required to have a <code>for</code> attribute with the same value as the input's <code>id</code>.</p>
+            <label><input type="radio" name="q2" value="true"> True</label>
+            <label><input type="radio" name="q2" value="false"> False</label>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+    </div>
+
+</body>
+</html>
